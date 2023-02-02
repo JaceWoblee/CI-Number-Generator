@@ -8,13 +8,35 @@
     <title>Index</title>
 </head>
 <body>
-    <h1>Index</h1>
-    <a>Dies ist der Index</a>
-    <div>
-    </br>
-        <button onclick="window.location.href='/pageOne';">PageOne</button>
-        <button onclick="window.location.href='/pageTwo';">PageTwo</button>
-        <button onclick="window.location.href='/pageThree';">PageThree</button>
-    </div>
+    <h1>Asset-Nummern</h1>
+    <h3>Hier kannst du die Asset Nummern generieren lassen</h3><br>
+    <form action="" class="panel formContainer" method="POST">
+       
+        <div class="dropdown"> <!--Wo werden diese Nummern eingesetzt?-->
+            <button class="dropbtn">Land</button>
+            <div class="dropdown-content">
+                <a href="#">Schweiz</a>
+                <a href="#">Deutschland</a>
+                <a href="#">Frankreich</a>
+            </div>
+        </div><br><br>
+
+        <div class="dropdown"> <!--Wo werden diese Nummern eingesetzt?-->
+            <button class="dropbtn">Systeme</button>
+            <div class="dropdown-content">
+                <a href="#">Industrie</a>
+                <a href="#">Produktion</a>
+                <a href="#">Development</a>
+                <a href="#">Office</a>
+            </div>
+        </div><br><br>
+
+        <div> <!--Abfrage nach der Anzahl der Asset-Nummern die Gedruckt werden sollen-->
+            <a>Wie viele Nummern willst du generieren?</a><br><br>
+            <input name="number" type="text" placeholder="Anzahl Nummern" class="number">
+        </div>
+    </form>
+        
+    
 </body>
 </html>

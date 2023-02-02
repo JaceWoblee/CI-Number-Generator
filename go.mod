@@ -1,4 +1,4 @@
-module assetSelling
+module AssetNumGen
 
 go 1.19
 
