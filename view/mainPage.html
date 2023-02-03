@@ -5,32 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/main.css">
-    <title>AssetNumGen</title>
+    <title>AssetGenerator</title>
 </head>
+
+<header>
+
+    <!--
+    <div class="dropdown"> !--Wo werden diese Nummern eingesetzt?--
+        <button class="dropbtn">Land</button>
+        <div class="dropdown-content">
+            <a onclick="window.location.href='/germany';">Deutschland</a>
+            <a onclick="window.location.href='/france';">Frankreich</a>
+        </div>
+    </div><br><br>
+    -->
+
+</header>
+
 <body>
-    <h1>Schweiz</h1>
+
+    <h1>Generator</h1>
     <form action="" class="panel formContainer" method="POST">
        
         <div>
-            <a>Bitte gib folgende angaben an.</a>
+            <h3>Bitte gib folgende angaben an.</h3>
         </div><br>
         
         <input list="places" name="place" id="place" placeholder="Ort">
             <datalist id="places">
-            <option value="Reinach"><!--CH-->
-            <option value="2"><!--#-->
-            <option value="3"><!--#-->
+            <option value="Reinach"><!--CHREFL-->
+            <option value="Coburg"><!--DECOFL-->
+            <option value="Freising"><!--DEFRFL-->
+            <option value="Cernay"><!--FRCEFL-->
+            <option value="Suzhou"><!--CNSUFL-->
+            <option value="Aurangabad"><!--INAUFL-->
+            <option value="Greenwood"><!--USGRFL-->
+            <option value="Itatiba"><!--BRITFL-->
         </datalist><br><br>
 
-        <input list="groupes" name="groupe" id="groupe" placeholder="Gruppe">
-            <datalist id="groupes">
-            <option value="Flowtec"><!--FL-->
-            <option value="2"><!--#-->
-            <option value="3"><!--#-->
-        </datalist><br><br>
-
-        <input list="departments" name="department" id="department" placeholder="Abteilung">
-            <datalist id="departments">
+        <input list="environments" name="environment" id="environment" placeholder="Umgebung">
+            <datalist id="environments">
             <option value="Industrie"><!--I-->
             <option value="Produktion"><!--P-->
             <option value="Development"><!--D-->
@@ -42,11 +56,16 @@
             <option value="Laptop"><!--L-->
             <option value="Desktop"><!--D-->
             <option value="AIO"><!--A-->
+            <option value="Virtual"><!--V-->
             <option value="Rack"><!--R-->
+            <option value="FlowTV"><!--FTV-->
+            <option value="Training Computer"><!--TR-->
         </datalist><br><br><br>
+
+        <a>*Placeholder*: CHREFL-OL000001</a><br><br>
         
         <div> <!--Abfrage nach der Anzahl der Asset-Nummern die Gedruckt werden sollen-->
-            <a>Wie viele Nummern willst du generieren?</a><br><br>
+            <h3>Wie viele Nummern willst du generieren?</h3><br>
             <input name="number" type="text" placeholder="Anzahl Nummern" class="number">
         </div>
     </form>

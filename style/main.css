@@ -1,6 +1,12 @@
-body{
-    text-align: center;
+header{
+  text-align: left;
 }
+
+body{
+  text-align: center;
+}
+
+
 
 /* Dropdown Button */
 .dropbtn {
