@@ -5,38 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/main.css">
-    <title>Index</title>
+    <title>AssetNumGen</title>
 </head>
 <body>
-    <h1>Asset-Nummern</h1>
-    <h3>Hier kannst du die Asset Nummern generieren lassen</h3><br>
-    <form action="" class="panel formContainer" method="POST">
-       
-        <div class="dropdown"> <!--Wo werden diese Nummern eingesetzt?-->
-            <button class="dropbtn">Land</button>
-            <div class="dropdown-content">
-                <a href="#">Schweiz</a>
-                <a href="#">Deutschland</a>
-                <a href="#">Frankreich</a>
-            </div>
-        </div><br><br>
-
-        <div class="dropdown"> <!--Wo werden diese Nummern eingesetzt?-->
-            <button class="dropbtn">Systeme</button>
-            <div class="dropdown-content">
-                <a href="#">Industrie</a>
-                <a href="#">Produktion</a>
-                <a href="#">Development</a>
-                <a href="#">Office</a>
-            </div>
-        </div><br><br>
-
-        <div> <!--Abfrage nach der Anzahl der Asset-Nummern die Gedruckt werden sollen-->
-            <a>Wie viele Nummern willst du generieren?</a><br><br>
-            <input name="number" type="text" placeholder="Anzahl Nummern" class="number">
-        </div>
-    </form>
-        
     
+    <h1>Für welches Land sind die Asset Nummern?</h1></br>
+    
+    <div>
+        <button onclick="window.location.href='/switzerland';">Schweiz</button>
+        <button onclick="window.location.href='/germany';">Deutschland</button>
+        <button onclick="window.location.href='/france';">Frankreich</button>
+    </div>
+
 </body>
 </html>

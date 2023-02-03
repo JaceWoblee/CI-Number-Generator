@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>AssetNumGen</title>
+</head>
+<body>
+    <h1>Schweiz</h1>
+    <form action="" class="panel formContainer" method="POST">
+       
+        <div>
+            <a>Bitte gib folgende angaben an.</a>
+        </div><br>
+        
+        <input list="places" name="place" id="place" placeholder="Ort">
+            <datalist id="places">
+            <option value="Reinach"><!--CH-->
+            <option value="2"><!--#-->
+            <option value="3"><!--#-->
+        </datalist><br><br>
+
+        <input list="groupes" name="groupe" id="groupe" placeholder="Gruppe">
+            <datalist id="groupes">
+            <option value="Flowtec"><!--FL-->
+            <option value="2"><!--#-->
+            <option value="3"><!--#-->
+        </datalist><br><br>
+
+        <input list="departments" name="department" id="department" placeholder="Abteilung">
+            <datalist id="departments">
+            <option value="Industrie"><!--I-->
+            <option value="Produktion"><!--P-->
+            <option value="Development"><!--D-->
+            <option value="Office"><!--O-->
+        </datalist><br><br>
+
+        <input list="systems" name="system" id="system" placeholder="System">
+            <datalist id="systems">
+            <option value="Laptop"><!--L-->
+            <option value="Desktop"><!--D-->
+            <option value="AIO"><!--A-->
+            <option value="Rack"><!--R-->
+        </datalist><br><br><br>
+        
+        <div> <!--Abfrage nach der Anzahl der Asset-Nummern die Gedruckt werden sollen-->
+            <a>Wie viele Nummern willst du generieren?</a><br><br>
+            <input name="number" type="text" placeholder="Anzahl Nummern" class="number">
+        </div>
+    </form>
+        
+    
+</body>
+</html>
